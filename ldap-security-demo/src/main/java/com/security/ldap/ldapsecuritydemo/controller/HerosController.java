@@ -22,4 +22,11 @@ public class HerosController {
 		}
 		return list;
 	}
+	@RequestMapping("/hero")
+	public Hero getHero() {
+		Hero hero = new Hero();
+		hero.setId(3);
+		hero.setName("Amit");
+		return hero;
+	}
 }
